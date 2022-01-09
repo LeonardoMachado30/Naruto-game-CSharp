@@ -4,9 +4,13 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Shinobi shinobi = new Shinobi("Flavio", "22", "Konoha");
+        Shinobi shinobi = new Shinobi("Flavio", "22", "Konoha", "Sharingan");
+        string[] allValues = { shinobi.nome, shinobi.idade, shinobi.cidade, shinobi.poder };
 
-        Console.WriteLine(shinobi.nome);
+        foreach (var v in allValues)
+        {
+            Console.WriteLine(v);
+        }
         Console.Read();
     }
 }
