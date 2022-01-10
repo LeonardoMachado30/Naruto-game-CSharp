@@ -15,14 +15,16 @@ public class StartGamer
         }
         Console.WriteLine("\n");
 
-        var shinobis = new List<int> { };
-        shinobis.AddRange(shinobi1.Skills(3));
-        shinobis.AddRange(shinobi1.Skills(40));
+        Skills skillKakashi = new Skills();
 
-        for (int i = 0; i < shinobis.Count; i++)
-        {
-            Console.WriteLine(shinobis[i]);
-        }
+        //var shinobis = new List<int> { };
+        //shinobis.AddRange(shinobi1.Skills(3));
+        //shinobis.AddRange(shinobi1.Skills(40));
+
+        //for (int i = 0; i < shinobis.Count; i++)
+        //{
+        //    Console.WriteLine(shinobis[i]);
+        //}
 
         Console.Read();
     }
