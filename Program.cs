@@ -1,16 +1,15 @@
 ﻿using System;
+// abstrair as informações do anime naruto
+//  Criar estruturas padrões
+// criar metodos como por exemplo poderUsado(), Skills()
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Shinobi shinobi = new Shinobi("Flavio", "22", "Konoha", "Sharingan");
-        string[] allValues = { shinobi.nome, shinobi.idade, shinobi.cidade, shinobi.poder };
+        Menu menu = new Menu();
 
-        foreach (var v in allValues)
-        {
-            Console.WriteLine(v);
-        }
-        Console.Read();
+        Console.WriteLine(menu);
+
     }
 }
