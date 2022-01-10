@@ -20,10 +20,5 @@ class Shinobi
         this.poder = (poder != "" ? poder : "");
     }
 
-    public List<int> Skills(int chakara = 0, int velocidade = 0, int forca = 0, int area = 0)
-    {
-        var result = new List<int> { chakara, velocidade, forca, area };
-        
-        return result;
-    }
+
 }
