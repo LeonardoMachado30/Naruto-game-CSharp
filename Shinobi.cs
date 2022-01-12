@@ -13,22 +13,21 @@ class Shinobi
     public int forca = 0;
     public int area = 0;
 
-    public Shinobi(string name, int age, int local, string power = "")
+    public Shinobi(string name)
     {
         this.name = name;
-        this.age = age;
 
-        if(local == 1) {
-            this.local = "Folha";
-        }else if(local == 2) {
-            this.local = "Pedra";
-        }else if(local == 3) {
-            this.local = "Areia";
-        }else if(local == 4) {
-            this.local = "Nevoa";
-        }
+        //if(local == 1) {
+        //    this.local = "Folha";
+        //}else if(local == 2) {
+        //    this.local = "Pedra";
+        //}else if(local == 3) {
+        //    this.local = "Areia";
+        //}else if(local == 4) {
+        //    this.local = "Nevoa";
+        //}
 
-        this.power = (power != "" ? power : "");
+        //this.power = (power != "" ? power : "");
     }
 
 

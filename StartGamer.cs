@@ -5,7 +5,6 @@ public class StartGamer
 {
 	public StartGamer()
 	{
-        string tab = "\t";
         #region
         /*Console.Write($"{tab}Digite sua idade: ");
         int age = Convert.ToInt32(Console.ReadLine());*/
@@ -27,11 +26,11 @@ public class StartGamer
     }
 
     public void Profile() {
-
+        string tab = "\t";
         Console.Write($"{tab}Digite seu nome: ");
         string name = Console.ReadLine();
 
-        Shinobi shinobi1 = new Shinobi(name, age, local, power);
+        Shinobi shinobi1 = new Shinobi(name);
 
         Console.Write($"\t|\t Nome: {shinobi1.name}");
         Console.Write($"\t|\t idade: {shinobi1.age}");
