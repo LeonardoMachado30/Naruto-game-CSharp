@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Shinobi
+class Shinobi: 
 {
     public string name = "";
     public int age = 0;
     public string local = "";
     public string power = "";
 
-    public int chakara = 0;
-    public int velocidade = 0;
-    public int forca = 0;
-    public int area = 0;
+   
 
     public Shinobi(string name)
     {
-        this.name = name;
+        Console.WriteLine(name);
+        Skills Naruto = Skills();
+        //this.name = name;
 
         //if(local == 1) {
         //    this.local = "Folha";
