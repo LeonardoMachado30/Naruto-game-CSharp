@@ -9,10 +9,10 @@ class Skills
 
     public Skills(string name)
     {
-        this.chakara = chakara;
-        this.velocidade = velocidade;
-        this.forca = forca;
-        this.area = area;
+        //this.chakara = chakara;
+        //this.velocidade = velocidade;
+        //this.forca = forca;
+        //this.area = area;
     }
 }
 

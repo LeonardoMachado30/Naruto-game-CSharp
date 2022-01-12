@@ -10,6 +10,5 @@ class Program
         Menu menu = new Menu();
 
         Console.WriteLine(menu);
-
     }
 }
