@@ -21,7 +21,28 @@ public class StartGamer
         string kaikenkenkai = Console.ReadLine();*/
         #endregion
         Profile();
-
+        Console.WriteLine("Escolha qual Shinobi voce quer: ");
+        Console.WriteLine("1 - Naruto");
+        Console.WriteLine("2 - Sasuke");
+        Console.WriteLine("3 - Kakashi");
+        Console.Write("-> ");
+        
+        int press = Convert.ToInt32(Console.ReadLine());
+        
+        switch (press) {
+            case 1:
+                Shinobi Naruto = new Shinobi("Naruto");
+                break;
+            case 2:
+                Shinobi Sasuke = new Shinobi("Sasuke");
+                break;
+            case 3:
+                Shinobi Kakashi = new Shinobi("Kakashi");
+                break;
+            default:
+                break;
+        }
+        
         Console.Read();
     }
 
@@ -30,11 +51,10 @@ public class StartGamer
         Console.Write($"{tab}Digite seu nome: ");
         string name = Console.ReadLine();
 
-        Shinobi shinobi1 = new Shinobi(name);
 
-        Console.Write($"\t|\t Nome: {shinobi1.name}");
-        Console.Write($"\t|\t idade: {shinobi1.age}");
-        Console.Write($"\t|\t cidade: {shinobi1.local}");
-        Console.Write($"\t|\t poder: {shinobi1.power}");
+        Console.Write($"\t|\t Nome: {name}");
+        //Console.Write($"\t|\t idade: {shinobi1.age}");
+        //Console.Write($"\t|\t cidade: {shinobi1.local}");
+        //Console.Write($"\t|\t poder: {shinobi1.power}");
     }
 }
