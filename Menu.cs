@@ -9,20 +9,25 @@ class Menu
 {
     public Menu()
     {
-        Console.WriteLine("MENU INICIAL" + "\n\n");
-        Console.WriteLine("1 -INICIAR JOGO");
-        Console.WriteLine("2 - OPÇÔES");
-        Console.WriteLine("3 - SAIR");
-        int press1 = Convert.ToInt32(Console.ReadLine());
+        string tab = "\t";
 
-        switch (press1)
+        Console.WriteLine($"{tab}{tab}MENU INICIAL" + "\n\n");
+        Console.WriteLine($"{tab}1 - INICIAR JOGO");
+        Console.WriteLine($"{tab}2 - OPÇÔES");
+        Console.WriteLine($"{tab}3 - SAIR");
+        Console.Write($"{tab}->");
+        int press = Convert.ToInt32(Console.ReadLine());
+
+        switch (press)
         {
             case 1:
                 StartGamer startGamer = new StartGamer();
 
                 Console.WriteLine(startGamer);
+
                 break;
             case 2:
+                Console.BackgroundColor = ConsoleColor.Blue;
                 break;
             case 3:
                 break;
