@@ -5,27 +5,37 @@ public class StartGamer
 {
 	public StartGamer()
 	{
-        Shinobi shinobi1 = new Shinobi("Flavio", "22", "Konoha", "Sharingan");
+        string tab = "\t";
+        #region
+        /*Console.Write($"{tab}Digite sua idade: ");
+        int age = Convert.ToInt32(Console.ReadLine());*/
 
-        string[] allValues = { shinobi1.nome, shinobi1.idade, shinobi1.cidade, shinobi1.poder };
+        /*Console.WriteLine($"\n{tab}De onde voce e: ");
+        Console.WriteLine($"{tab}1 - Folha ");
+        Console.WriteLine($"{tab}2 - Pedra ");
+        Console.WriteLine($"{tab}3 - Areia");
+        Console.WriteLine($"{tab}4 - Nevoa");
+        Console.Write($"{tab}->");
+        int local = Convert.ToInt32(Console.ReadLine());*/
 
-        foreach (var v in allValues)
-        {
-            Console.WriteLine(v);
-        }
-        Console.WriteLine("\n");
-
-        Skills skillKakashi = new Skills();
-
-        //var shinobis = new List<int> { };
-        //shinobis.AddRange(shinobi1.Skills(3));
-        //shinobis.AddRange(shinobi1.Skills(40));
-
-        //for (int i = 0; i < shinobis.Count; i++)
-        //{
-        //    Console.WriteLine(shinobis[i]);
-        //}
+        /*Console.Write($"{tab}Digite seu Kaikenkenkai: ");
+        string kaikenkenkai = Console.ReadLine();*/
+        #endregion
+        Profile();
 
         Console.Read();
+    }
+
+    public void Profile() {
+
+        Console.Write($"{tab}Digite seu nome: ");
+        string name = Console.ReadLine();
+
+        Shinobi shinobi1 = new Shinobi(name, age, local, power);
+
+        Console.Write($"\t|\t Nome: {shinobi1.name}");
+        Console.Write($"\t|\t idade: {shinobi1.age}");
+        Console.Write($"\t|\t cidade: {shinobi1.local}");
+        Console.Write($"\t|\t poder: {shinobi1.power}");
     }
 }
